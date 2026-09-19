@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【無料プレゼント】AIパズル販売スタートガイド｜在庫ゼロ・発送ゼロ ＋コピペOKプロンプト | みな｜AI×SNSで在宅収入を叶える主婦</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Shippori+Mincho:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: { 'xs': '375px', 'sm': '480px' },
+                    colors: {
+                        primary: '#ff8a75',
+                        brand: {
+                            light: '#FAF0EC',
+                            peach: '#FFF5F0',
+                            coral: '#E89A91',
+                            deep: '#DE7A70',
+                            accent: '#D4AF37',
+                            dark: '#4A3E3D',
+                            line: '#06C755'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans JP', 'sans-serif'],
+                        serif: ['Shippori Mincho', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans JP', 'sans-serif'; color: #4A3E3D; background-color: #FAF0EC; }
+        html { scroll-behavior: smooth; }
+        .serif-title { font-family: 'Shippori Mincho', 'serif'; }
+        .toast { transition: opacity 0.3s ease, transform 0.3s ease; }
+        @keyframes bounce-slow { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+        .animate-bounce-slow { animation: bounce-slow 2.5s infinite; }
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .chev { transform: rotate(90deg); }
+        .chev { transition: transform .2s; }
+        .ptab { background:#fff; border-color:#FAF0EC; color:#4A3E3D; }
+        .ptab.is-on { background:#E89A91; border-color:#DE7A70; color:#fff; box-shadow:0 4px 10px rgba(222,122,112,.35); }
+        .fi { position: relative; }
+        .fi:not(:last-child)::after { content:"›"; position:absolute; right:-7px; top:8px; color:#E89A91; font-weight:900; font-size:16px; }
+        .arw { color:#E89A91; font-weight:900; }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-coral selection:text-white">
+
+    <div id="toast" class="toast fixed top-5 left-1/2 -translate-x-1/2 z-50 bg-brand-deep text-white px-6 py-3 rounded-full shadow-lg font-bold text-sm tracking-wider opacity-0 pointer-events-none transform translate-y-[-10px]">
+        <i class="fa-solid fa-circle-check mr-2"></i>プロンプトをコピーしました！
+    </div>
+
+    <div id="top" class="max-w-[640px] mx-auto bg-white min-h-screen shadow-xl flex flex-col overflow-x-hidden">
+
+        <!-- ============ ヘッダー ============ -->
+        <header class="relative text-center bg-gradient-to-b from-brand-peach to-white pt-10 pb-6 px-4 border-b border-brand-light">
+            <div class="inline-block bg-brand-coral text-white text-[10px] xs:text-xs font-bold px-3.5 py-1 rounded-full tracking-wider mb-3 shadow-sm">
+                2026年最新ノウハウ公開！
+            </div>
+
+            <p class="text-xs xs:text-sm font-bold text-brand-deep tracking-tight mb-2">
+                絵心ゼロ・在庫ゼロ・発送作業ゼロ
+            </p>
+
+            <h1 class="serif-title text-xl xs:text-2xl sm:text-3xl font-extrabold text-brand-dark leading-snug mb-3 px-1">
+                <span class="text-brand-deep block relative inline-block">
+                    AIパズル販売
+                    <span class="absolute left-0 bottom-1 w-full h-2 bg-brand-coral opacity-25 -z-10"></span>
+                </span>
+                <span class="text-brand-deep block relative inline-block">
+                    スタートガイド
+                </span>
+                <span class="text-sm xs:text-base sm:text-lg block mt-1 text-brand-accent font-bold">＋そのままコピペで使えるプロンプト</span>
+            </h1>
+
+            <p class="text-[10px] xs:text-xs font-medium text-gray-400 mb-5">
+                ＼ 旦那の収入超えも狙えちゃいます ／
+            </p>
+
+            <a href="https://www.instagram.com/mina_ai_fukugyo/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 bg-brand-light/50 hover:bg-brand-light transition-colors p-3 rounded-2xl max-w-sm mx-auto mb-4 border border-brand-light group">
+                <img src="assets/profile.png"
+                     alt="みな"
+                     class="w-11 h-11 rounded-full object-cover border-2 border-white shadow group-hover:scale-105 transition-transform">
+                <div class="text-left">
+                    <p class="text-[10px] text-gray-500 font-bold">AI×SNSで在宅収入を叶える主婦</p>
+                    <p class="text-xs xs:text-sm font-extrabold text-brand-dark flex items-center gap-1">
+                        みな
+                        <span class="text-[10px] font-normal text-brand-deep bg-brand-peach px-1.5 py-0.5 rounded">
+                            <i class="fa-brands fa-instagram mr-0.5"></i>@mina_ai_fukugyo
+                        </span>
+                    </p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-gray-300 text-xs ml-auto group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </header>
+
+        <!-- ============ 悩み ============ -->
+        <section class="py-8 px-6">
+            <div class="bg-white p-5 xs:p-6 rounded-3xl shadow-sm border border-brand-light">
+                <h3 class="text-sm xs:text-base font-bold text-center text-brand-deep mb-5 flex items-center justify-center gap-1">
+                    🫧 こんなお悩みありませんか？
+                </h3>
+
+                <ul class="space-y-4 text-xs xs:text-sm text-brand-dark leading-relaxed">
+                    <li class="flex items-start gap-2.5">
+                        <span class="text-brand-coral text-base mt-0.5">😔</span>
+                        <span>「AI副業」って気になるけど、<br><strong>絵も描けないし、自分には無理そう…</strong></span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <span class="text-brand-coral text-base mt-0.5">😔</span>
+                        <span>物販に興味はあっても、<br><strong>在庫を抱えたり、毎日発送に追われるのはちょっと…</strong></span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <span class="text-brand-coral text-base mt-0.5">😔</span>
+                        <span>パソコンも得意じゃないし、<br><strong>初期費用をかけて失敗したらと思うと動けない</strong></span>
+                    </li>
+                </ul>
+
+                <div class="mt-6 pt-6 border-t border-dashed border-brand-light text-center">
+                    <p class="text-xs xs:text-sm leading-relaxed font-bold">
+                        それ、<span class="text-brand-deep font-black bg-brand-peach px-1.5 py-0.5 rounded">「AIパズル販売」</span>で解決できます！✊
+                    </p>
+                    <p class="text-[11px] text-gray-500 mt-2 leading-relaxed">
+                        絵はAIにおまかせ。印刷・梱包・発送もサービス側がやってくれます。<br>
+                        あなたがやるのは、<strong>「どんなパズルなら欲しいかな？」を考えること</strong>だけ。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 図解：仕組み ============ -->
+        <section class="py-6 px-6">
+            <div class="flex items-center gap-2.5 mb-4">
+                <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">図解</span>
+                <h2 class="text-base font-extrabold text-brand-dark">仕組みは、たったこれだけ</h2>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-brand-light p-4 mb-4">
+                <div class="flex items-stretch justify-between gap-1 text-center">
+                    <div class="flex-1 bg-brand-peach rounded-xl p-2 border border-brand-coral/40">
+                        <p class="text-2xl">👩</p><p class="text-[10px] font-black text-brand-deep mt-1">あなた</p><p class="text-[9px] text-gray-500 leading-tight mt-0.5">アイデアを<br>言葉にする</p>
+                    </div>
+                    <span class="arw self-center text-sm">▶</span>
+                    <div class="flex-1 bg-brand-peach rounded-xl p-2 border border-brand-coral/40">
+                        <p class="text-2xl">🤖</p><p class="text-[10px] font-black text-brand-deep mt-1">AI</p><p class="text-[9px] text-gray-500 leading-tight mt-0.5">絵を<br>描いてくれる</p>
+                    </div>
+                    <span class="arw self-center text-sm">▶</span>
+                    <div class="flex-1 bg-brand-light/70 rounded-xl p-2 border border-brand-light">
+                        <p class="text-2xl">🖨️</p><p class="text-[10px] font-black text-brand-dark mt-1">Printify</p><p class="text-[9px] text-gray-500 leading-tight mt-0.5">印刷・梱包<br>・発送</p>
+                    </div>
+                    <span class="arw self-center text-sm">▶</span>
+                    <div class="flex-1 bg-brand-light/70 rounded-xl p-2 border border-brand-light">
+                        <p class="text-2xl">🎁</p><p class="text-[10px] font-black text-brand-dark mt-1">お客様</p><p class="text-[9px] text-gray-500 leading-tight mt-0.5">パズルが<br>自宅に届く</p>
+                    </div>
+                </div>
+                <div class="flex mt-2 text-[9px] font-bold text-center">
+                    <div class="w-1/2 pr-0.5"><div class="bg-brand-coral text-white rounded-full py-0.5">あなたの仕事はココ！</div></div>
+                    <div class="w-1/2 pl-0.5"><div class="bg-gray-200 text-gray-500 rounded-full py-0.5">おまかせでOK</div></div>
+                </div>
+                <div class="mt-3 pt-3 border-t border-dashed border-brand-light flex items-center justify-center gap-2 text-[10px] text-gray-600">
+                    <span>🎁 お客様が支払う</span><span class="arw">▶</span><span class="font-bold">原価と手数料を引く</span><span class="arw">▶</span><span class="bg-yellow-100 text-brand-deep font-black px-2 py-0.5 rounded-full">💰 あなたの利益</span>
+                </div>
+            </div>
+
+            <p class="text-[11px] text-gray-500 text-center mb-2 font-bold">ふつうの物販と、なにが違うの？</p>
+            <div class="rounded-2xl overflow-hidden border border-brand-light text-[10px] xs:text-[11px] text-center">
+                <div class="grid grid-cols-3 bg-brand-light font-black">
+                    <div class="p-2"></div><div class="p-2 text-gray-500">ふつうの物販</div><div class="p-2 bg-brand-coral text-white">AIパズル販売</div>
+                </div>
+                <div class="grid grid-cols-3 border-t border-brand-light items-center"><div class="p-2 font-bold bg-brand-peach/50">絵の技術</div><div class="p-2 text-gray-500">必要</div><div class="p-2 font-black text-brand-deep">不要 ✅<br><span class="font-normal text-[9px] text-gray-500">AIが描く</span></div></div>
+                <div class="grid grid-cols-3 border-t border-brand-light items-center"><div class="p-2 font-bold bg-brand-peach/50">在庫</div><div class="p-2 text-gray-500">仕入れて保管</div><div class="p-2 font-black text-brand-deep">ゼロ ✅<br><span class="font-normal text-[9px] text-gray-500">注文後に印刷</span></div></div>
+                <div class="grid grid-cols-3 border-t border-brand-light items-center"><div class="p-2 font-bold bg-brand-peach/50">発送</div><div class="p-2 text-gray-500">自分で梱包・発送</div><div class="p-2 font-black text-brand-deep">おまかせ ✅<br><span class="font-normal text-[9px] text-gray-500">Printifyが対応</span></div></div>
+                <div class="grid grid-cols-3 border-t border-brand-light items-center"><div class="p-2 font-bold bg-brand-peach/50">仕入れ</div><div class="p-2 text-gray-500">先にお金が必要</div><div class="p-2 font-black text-brand-deep">不要 ✅<br><span class="font-normal text-[9px] text-gray-500">売れてから原価</span></div></div>
+            </div>
+        </section>
+
+        <!-- ============ このガイドでできること ============ -->
+        <section class="py-6 px-6 bg-brand-peach/20">
+            <div class="bg-white p-5 rounded-2xl border border-brand-light">
+                <h3 class="text-xs xs:text-sm font-extrabold text-brand-deep mb-3 flex items-center gap-1.5">
+                    <i class="fa-solid fa-puzzle-piece"></i> このガイドで、できるようになること
+                </h3>
+                <ul class="space-y-2.5 text-[11px] xs:text-xs text-brand-dark leading-relaxed">
+                    <li class="flex gap-2"><span class="text-brand-accent">◎</span><span><strong>言葉だけで絵を作れる</strong>：「こんな絵がほしい」を文章で伝えるだけ。描く技術は要りません。</span></li>
+                    <li class="flex gap-2"><span class="text-brand-accent">◎</span><span><strong>絵をパズルという“商品”に変えられる</strong>：Printify（印刷通販サービス）に画像を載せるだけ。</span></li>
+                    <li class="flex gap-2"><span class="text-brand-accent">◎</span><span><strong>在庫ゼロ・発送ゼロの仕組みが分かる</strong>：注文が入ってから、印刷・梱包・発送まで任せられます。</span></li>
+                    <li class="flex gap-2"><span class="text-brand-accent">◎</span><span><strong>もう一段伸ばす3つの工夫を知れる</strong>：海外・ノウハウ販売・SNS。ここが差になります。</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ AIで本当に作れる？ ============ -->
+        <section class="py-6 px-6">
+            <div class="flex items-center gap-2.5 mb-4">
+                <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">安心</span>
+                <h2 class="text-base font-extrabold text-brand-dark">AIだけで、本当に絵が作れるの？</h2>
+            </div>
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                作れます🌷 ChatGPTなどの画像生成AIに、<strong>描いてほしい絵を文章で伝える</strong>だけ。数十秒ほどで1枚のイラストが仕上がります。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 text-[11px] xs:text-xs">
+                <span class="bg-brand-peach/60 border border-brand-light px-3 py-1.5 rounded-full">🐶 花畑で遊ぶ白い子犬</span>
+                <span class="bg-brand-peach/60 border border-brand-light px-3 py-1.5 rounded-full">🐱 宇宙を旅する猫</span>
+                <span class="bg-brand-peach/60 border border-brand-light px-3 py-1.5 rounded-full">🦊 和の街を歩くキツネ</span>
+                <span class="bg-brand-peach/60 border border-brand-light px-3 py-1.5 rounded-full">🌸 桜の下で眠る女の子</span>
+                <span class="bg-brand-peach/60 border border-brand-light px-3 py-1.5 rounded-full">🐬 海を泳ぐイルカ</span>
+            </div>
+            <div class="bg-white rounded-2xl border border-brand-light p-4 mb-4">
+                <div class="flex items-center justify-between gap-1 text-center">
+                    <div class="flex-1 bg-brand-peach rounded-xl p-2.5 border border-brand-coral/40"><p class="text-xl">💬</p><p class="text-[9px] font-bold text-brand-dark leading-tight mt-1">「森の奥の<br>秘密の本屋さん」</p></div>
+                    <span class="arw text-sm">▶</span>
+                    <div class="flex-1 bg-brand-dark text-white rounded-xl p-2.5"><p class="text-xl">🤖</p><p class="text-[9px] font-bold leading-tight mt-1">AIが描く<br>（数十秒）</p></div>
+                    <span class="arw text-sm">▶</span>
+                    <div class="flex-1 bg-brand-peach rounded-xl p-2.5 border border-brand-coral/40"><p class="text-xl">🖼️</p><p class="text-[9px] font-bold text-brand-dark leading-tight mt-1">オリジナルの<br>イラスト完成</p></div>
+                </div>
+                <p class="text-center text-[10px] text-gray-500 mt-3"><span class="arw">↺</span> イメージと違ったら「もっと〇〇に」と伝え直すだけ</p>
+            </div>
+            <div class="bg-[#FEF9E7] border-l-4 border-yellow-400 p-3.5 rounded-r-xl text-[10px] xs:text-xs leading-relaxed">
+                🌷 <strong>1回で理想どおり、にはなりません。でも大丈夫</strong>。「もっとかわいく」「背景を明るく」「水彩画っぽく」と伝え直すだけで、少しずつ近づきます。このやり取りが、実はいちばん楽しいところです。
+            </div>
+        </section>
+
+        <!-- ============ 5ステップ概要 ============ -->
+        <section class="py-6 px-6 bg-brand-peach/20">
+            <h2 class="text-base font-extrabold text-brand-dark text-center mb-5">
+                たった5ステップで、パズルが商品になるまで 🎉
+            </h2>
+            <div class="grid grid-cols-5 gap-1.5 text-center">
+                <a href="#step1" class="p-1 fi"><div class="w-10 h-10 mx-auto bg-white rounded-full border border-brand-light flex items-center justify-center text-base shadow-sm">💡</div><p class="text-[9px] font-bold mt-1.5 text-brand-dark leading-tight">テーマ決め</p></a>
+                <a href="#step2" class="p-1 fi"><div class="w-10 h-10 mx-auto bg-white rounded-full border border-brand-light flex items-center justify-center text-base shadow-sm">🎨</div><p class="text-[9px] font-bold mt-1.5 text-brand-dark leading-tight">AIで絵を作る</p></a>
+                <a href="#step3" class="p-1 fi"><div class="w-10 h-10 mx-auto bg-white rounded-full border border-brand-light flex items-center justify-center text-base shadow-sm">📝</div><p class="text-[9px] font-bold mt-1.5 text-brand-dark leading-tight">Printify登録</p></a>
+                <a href="#step4" class="p-1 fi"><div class="w-10 h-10 mx-auto bg-white rounded-full border border-brand-light flex items-center justify-center text-base shadow-sm">🧩</div><p class="text-[9px] font-bold mt-1.5 text-brand-dark leading-tight">パズル化</p></a>
+                <a href="#step5" class="p-1 fi"><div class="w-10 h-10 mx-auto bg-white rounded-full border border-brand-light flex items-center justify-center text-base shadow-sm">🏷️</div><p class="text-[9px] font-bold mt-1.5 text-brand-dark leading-tight">価格・公開</p></a>
+            </div>
+            <p class="text-[10px] text-gray-400 text-center mt-4 leading-relaxed">
+                誰に届けるか決める → 1枚だけ絵を作る → 登録する → パズルに載せる → 値段をつけて出す。<br>いきなりたくさん作らないのがコツです。
+            </p>
+        </section>
+
+        <!-- ============ STEP 1 ============ -->
+        <section id="step1" class="py-8 px-6 scroll-mt-4">
+            <div class="flex items-center gap-2.5 mb-4">
+                <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">STEP 1</span>
+                <h2 class="text-base font-extrabold text-brand-dark">💡 「誰に届けるか」からテーマを決める</h2>
+            </div>
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                いきなり絵を作り始めず、まず<strong>「このパズルを、誰が手に取るか」</strong>を思い浮かべます。相手が決まると、AIへの指示も具体的になって、商品の魅力が伝わりやすくなります。
+            </p>
+            <div class="grid grid-cols-2 gap-3 mb-4 text-[11px] xs:text-xs">
+                <div class="bg-brand-peach/40 p-3.5 rounded-2xl border border-brand-light"><p class="font-black text-brand-deep mb-1">👶 子ども向け</p><p class="text-gray-600 leading-relaxed">どうぶつ／恐竜／のりもの／お姫様／宇宙</p></div>
+                <div class="bg-brand-peach/40 p-3.5 rounded-2xl border border-brand-light"><p class="font-black text-brand-deep mb-1">🧑 大人向け</p><p class="text-gray-600 leading-relaxed">風景／花／猫・犬／和デザイン／ファンタジー／季節の情景</p></div>
+            </div>
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                「何を作ればいいか分からない…」ときは、まずAIに<strong>売れ筋のリサーチ</strong>から任せてしまいましょう。
+            </p>
+            <div class="flex items-center justify-center gap-1.5 mb-3 text-[10px] font-bold text-brand-dark">
+                <span class="bg-brand-peach border border-brand-light rounded-full px-3 py-1">① 調べて案出し</span>
+                <i class="fa-solid fa-arrow-right text-brand-coral"></i>
+                <span class="bg-brand-peach border border-brand-light rounded-full px-3 py-1">② 1つ深掘り</span>
+                <i class="fa-solid fa-arrow-right text-brand-coral"></i>
+                <span class="bg-brand-peach border border-brand-light rounded-full px-3 py-1">③ 差別化</span>
+            </div>
+            <p class="text-[10px] xs:text-[11px] text-gray-500 leading-relaxed mb-3">
+                ※ ①→②→③は<strong>同じチャットで、上のボタンを順番に</strong>コピーして送ってください。<br>
+                ※ ①はWeb検索ができるAI（検索機能ONのChatGPT・Perplexity・Gensparkなど）がおすすめです。
+            </p>
+
+            <div class="grid grid-cols-3 gap-2 mb-3" role="tablist">
+                <button type="button" data-tab="1" class="ptab is-on rounded-xl px-1.5 py-2.5 text-center border-2 transition-all">
+                    <span class="block text-base font-black leading-none">①</span>
+                    <span class="block text-[10px] font-bold mt-1 leading-tight">リサーチ＆<br>テーマ出し</span>
+                </button>
+                <button type="button" data-tab="2" class="ptab rounded-xl px-1.5 py-2.5 text-center border-2 transition-all">
+                    <span class="block text-base font-black leading-none">②</span>
+                    <span class="block text-[10px] font-bold mt-1 leading-tight">1つを<br>深掘り</span>
+                </button>
+                <button type="button" data-tab="3" class="ptab rounded-xl px-1.5 py-2.5 text-center border-2 transition-all">
+                    <span class="block text-base font-black leading-none">③</span>
+                    <span class="block text-[10px] font-bold mt-1 leading-tight">他と<br>差をつける</span>
+                </button>
+            </div>
+
+            <div data-panel="1" class="bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden mb-4">
+                <div class="bg-[#3A302F] px-4 py-3 flex justify-between items-center border-b border-white/10">
+                    <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-coral"></span><span class="text-[11px] text-gray-300 font-bold">① リサーチ＆テーマ出しプロンプト</span></div>
+                    <button onclick="copyToClipboard('p1', this)" class="text-[10px] text-white bg-brand-coral hover:bg-brand-deep transition-colors px-2.5 py-1 rounded-md font-bold flex items-center gap-1 shrink-0"><i class="fa-regular fa-copy"></i><span>コピー</span></button>
+                </div>
+                <div class="p-3 overflow-x-auto">
+<pre id="p1" class="text-[10px] leading-relaxed font-mono whitespace-pre-wrap select-all">あなたは、ハンドメイド雑貨やグッズ販売にくわしい市場リサーチ担当です。
+AIで作ったイラストをジグソーパズルにして販売したいと考えています。
+まず、Web検索を使って「今、売れているパズルの絵柄」を調べてから、
+買ってもらえそうなテーマを提案してください。
+
+【STEP A：リサーチ】
+次の場所で「ジグソーパズル」を検索し、実際の商品ページを見て調べてください。
+・Etsy／Amazon／楽天市場／Pinterest／Instagram
+調べてほしいこと：
+1. 人気の絵柄・テーマ・色づかいの傾向
+2. 価格帯と、ピース数ごとの売れ筋
+3. レビューや「売れています」表示が多い商品の共通点
+4. 出品がまだ少なく、今から狙えそうなすき間ジャンル
+
+【STEP B：テーマ提案】
+リサーチ結果をもとに、買ってもらえそうなテーマを10個、提案してください。
+・絵が描けない初心者でも、AIで再現しやすいこと
+・完成した絵を想像するとワクワクすること
+・「子ども向け」と「大人向け」を5個ずつに分けること
+・それぞれに「なぜ売れそうか（リサーチのどこが根拠か）」を一言添えること
+
+【私の好きなジャンル・色】
+［　例：猫、パステルカラー　／　なければ空欄でOK　］</pre>
+                </div>
+            </div>
+
+            <div data-panel="2" class="hidden bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden mb-4">
+                <div class="bg-[#3A302F] px-4 py-3 flex justify-between items-center border-b border-white/10">
+                    <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-coral"></span><span class="text-[11px] text-gray-300 font-bold">② 気になった1つを深掘りするプロンプト</span></div>
+                    <button onclick="copyToClipboard('p2', this)" class="text-[10px] text-white bg-brand-coral hover:bg-brand-deep transition-colors px-2.5 py-1 rounded-md font-bold flex items-center gap-1 shrink-0"><i class="fa-regular fa-copy"></i><span>コピー</span></button>
+                </div>
+                <div class="p-3 overflow-x-auto">
+<pre id="p2" class="text-[10px] leading-relaxed font-mono whitespace-pre-wrap select-all">先ほどの案から「［　選んだテーマ　］」を採用します。
+このテーマを商品にするために、次の5つを整理してください。
+
+1. 買ってくれそうな人（年齢・どんな場面で買うか）
+2. 絵に入れたい要素（主役・背景・小物）
+3. おすすめの色づかいと画風
+4. パズルにしたとき、組み立てが楽しくなる工夫
+5. 商品タイトル案を3つ</pre>
+                </div>
+            </div>
+
+            <div data-panel="3" class="hidden bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden mb-4">
+                <div class="bg-[#3A302F] px-4 py-3 flex justify-between items-center border-b border-white/10">
+                    <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-coral"></span><span class="text-[11px] text-gray-300 font-bold">③ 他と差をつけたいとき用プロンプト</span></div>
+                    <button onclick="copyToClipboard('p3', this)" class="text-[10px] text-white bg-brand-coral hover:bg-brand-deep transition-colors px-2.5 py-1 rounded-md font-bold flex items-center gap-1 shrink-0"><i class="fa-regular fa-copy"></i><span>コピー</span></button>
+                </div>
+                <div class="p-3 overflow-x-auto">
+<pre id="p3" class="text-[10px] leading-relaxed font-mono whitespace-pre-wrap select-all">「［　選んだテーマ　］」は、似た商品が多そうで埋もれるのが心配です。
+次の3つの切り口でアレンジ案を出してください。
+
+・季節やイベントと組み合わせる案
+・絵の中に物語を感じられる案
+・特定の趣味の人に刺さる案（本好き・猫好き・旅行好きなど）
+
+各案に、画像生成AIにそのまま貼り付けられる「絵の説明文」を1つずつ付けてください。
+
+【絵の説明文の書き方】
+・「何が・どこで・何をしているか」を2〜3文で具体的に書く
+・画風（水彩画・絵本風など）と、雰囲気・色づかいも文中に含める
+・文字やロゴは入れない
+・そのままコピペできるよう、案ごとに「　」でくくって出力する</pre>
+                </div>
+            </div>
+
+            <div class="bg-brand-peach/40 p-3.5 rounded-xl border border-brand-light text-[11px] xs:text-xs leading-relaxed">
+                🌷 <strong>つまずいたら</strong>：提案がふんわりしすぎるときは、プロンプト末尾の「好きなジャンル・色」を先に1つ書いて聞き直してみてください。案が多くて選べないときは「この中で、初心者が一番作りやすいのはどれ？理由も教えて」と続けて聞くのがおすすめです。
+            </div>
+        </section>
+
+        <!-- ============ STEP 2 ============ -->
+        <section id="step2" class="py-8 px-6 bg-brand-peach/10 scroll-mt-4">
+            <div class="flex items-center gap-2.5 mb-4">
+                <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">STEP 2</span>
+                <h2 class="text-base font-extrabold text-brand-dark">🎨 AIに1枚だけ、絵を描いてもらう</h2>
+            </div>
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                テーマが決まったら、いよいよ絵づくり。<strong>最初は1枚だけ</strong>で十分です。<br>
+                パズル用は「余白なし・文字なし」がポイントなので、下の条件をそのまま入れておきましょう。
+            </p>
+            <div class="bg-brand-peach/60 border border-brand-coral/40 rounded-xl p-3 mb-4 text-[11px] xs:text-xs leading-relaxed">
+                📋 <strong>やることは「貼るだけ」</strong><br>
+                STEP1の③で出た<strong>「絵の説明文」から気に入った1つ</strong>をコピーして、下のプロンプトの［　］に貼り付けます。自分で文章を考える必要はありません。
+            </div>
+            <div class="flex items-center justify-center gap-1.5 mb-4 text-[10px] font-bold text-brand-dark text-center">
+                <span class="bg-white border border-brand-light rounded-xl px-2.5 py-2">📝<br>指示を送る</span><span class="arw">▶</span>
+                <span class="bg-white border border-brand-light rounded-xl px-2.5 py-2">🤖<br>1枚できる</span><span class="arw">▶</span>
+                <span class="bg-white border border-brand-light rounded-xl px-2.5 py-2">👀<br>チェック</span><span class="arw">▶</span>
+                <span class="bg-brand-coral text-white rounded-xl px-2.5 py-2">💾<br>高画質で保存</span>
+            </div>
+            <p class="text-center text-[10px] text-gray-500 -mt-2 mb-4"><span class="arw">↺</span> 気に入らなければ「チェック」から「指示」に戻って調整</p>
+
+            <div class="bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden mb-4">
+                <div class="bg-[#3A302F] px-4 py-3 flex justify-between items-center border-b border-white/10">
+                    <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-coral"></span><span class="text-[11px] text-gray-300 font-bold">④ パズル用イラスト生成プロンプト</span></div>
+                    <button onclick="copyToClipboard('p4', this)" class="text-[10px] text-white bg-brand-coral hover:bg-brand-deep transition-colors px-2.5 py-1 rounded-md font-bold flex items-center gap-1 shrink-0"><i class="fa-regular fa-copy"></i><span>コピー</span></button>
+                </div>
+                <div class="p-3 overflow-x-auto">
+<pre id="p4" class="text-[10px] leading-relaxed font-mono whitespace-pre-wrap select-all">ジグソーパズルにするためのイラストを1枚、作ってください。
+
+【絵の内容】
+［　③で出た「絵の説明文」から気に入った1つを、ここにそのまま貼り付け　］
+
+【パズル向けの条件】
+・絵の端から端まで描き込み、余白や枠は作らない
+・文字・ロゴ・透かしは入れない
+・主役を中央に置き、背景にも見どころを散りばめる
+・細かいところまで、くっきり鮮明に
+・高解像度で仕上げる
+・既存のキャラクターや作品に似せない</pre>
+                </div>
+            </div>
+
+            <p class="text-[11px] xs:text-xs text-gray-500 leading-relaxed mb-2.5">
+                🧩 <strong>実際にAIで作った、パズル向けのイラスト例</strong>
+            </p>
+            <div class="flex overflow-x-auto snap-x snap-mandatory gap-3 pb-3 -mx-6 px-6 mb-2" style="scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
+                <div class="snap-center shrink-0 w-64">
+                    <img src="assets/samples/sample01.webp" class="w-64 h-64 object-cover rounded-2xl shadow-md border border-brand-light" alt="パズル用イラスト例：雨の路地、カフェの前に座る白黒の猫" loading="lazy">
+                    <p class="text-[10px] text-gray-500 mt-1.5 text-center">☔ 雨あがりの路地の喫茶店</p>
+                </div>
+                <div class="snap-center shrink-0 w-64">
+                    <img src="assets/samples/sample02.webp" class="w-64 h-64 object-cover rounded-2xl shadow-md border border-brand-light" alt="パズル用イラスト例：和風の庭園と縁側に座る白い猫" loading="lazy">
+                    <p class="text-[10px] text-gray-500 mt-1.5 text-center">🌿 初夏の庭と縁側</p>
+                </div>
+                <div class="snap-center shrink-0 w-64">
+                    <img src="assets/samples/sample03.webp" class="w-64 h-64 object-cover rounded-2xl shadow-md border border-brand-light" alt="パズル用イラスト例：レトロな喫茶店でコーヒーとプリンを前にした灰色の猫" loading="lazy">
+                    <p class="text-[10px] text-gray-500 mt-1.5 text-center">☕ レトロな喫茶店の午後</p>
+                </div>
+            </div>
+            <p class="text-[10px] text-gray-400 mb-4">↑ 細かい描き込みが多い絵は、パズルにしたときの見どころが増えます。</p>
+
+            <div class="bg-white p-3.5 rounded-xl border border-brand-light text-[11px] xs:text-xs leading-relaxed mb-2">
+                ✏️ <strong>気に入らないときは、続けてこう伝えるだけ</strong><br>
+                ・「動物をもう1匹足して」<br>
+                ・「全体の色をもっと鮮やかに」<br>
+                ・「背景を、もっと深い森にして」<br>
+                ・「夜の雰囲気に変えて」
+            </div>
+            <div class="bg-white p-3.5 rounded-xl border border-brand-light text-[11px] xs:text-xs leading-relaxed mb-2">
+                🖼️ <strong>1枚できたら、この4点だけ確認</strong><br>
+                ① 手や指など、細部が崩れていないか<br>
+                ② 端が切れていたり、余白が空いていないか<br>
+                ③ 文字らしきものが紛れ込んでいないか<br>
+                ④ <strong>保存は「最大サイズ・高画質」で</strong>（印刷は解像度が低いと粗くなります）
+            </div>
+            <div class="bg-[#FEF9E7] border-l-4 border-yellow-400 p-3.5 rounded-r-xl text-[10px] xs:text-xs leading-relaxed mb-2">
+                ⚠️ ChatGPTの無料プランは、1日に作れる画像の枚数に上限があります。上限に達したら、続きは翌日に。<br>
+                ⚠️ 「〇〇（作品名）風」「〇〇のような」といった指示は避け、<u>「ふわふわした毛並みの白い子犬」のような一般的な言葉だけ</u>で描いてもらってください。
+            </div>
+            <div class="bg-brand-peach/40 p-3.5 rounded-xl border border-brand-light text-[11px] xs:text-xs leading-relaxed">
+                🌷 <strong>テイストがバラバラになるときは</strong>：気に入った1枚ができたら、「画風・雰囲気」の言い回しをそのままテンプレにして、毎回同じ言葉で使い回しましょう。手や指が崩れるときは「その部分だけ描き直して」か、風景や背景を主役にした構図に変えると安定します。
+            </div>
+        </section>
+
+        <!-- ============ STEP 3 ============ -->
+        <section id="step3" class="py-8 px-6 scroll-mt-4">
+            <div class="flex items-center gap-2.5 mb-4">
+                <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">STEP 3</span>
+                <h2 class="text-base font-extrabold text-brand-dark">📝 Printifyに登録する</h2>
+            </div>
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                ここからが商品化。使うのは<strong>「Printify（プリンティファイ）」</strong>という印刷通販サービスです。画像をアップロードするだけで、パズルなどのグッズに印刷して売れる仕組みです。
+            </p>
+            <div class="grid grid-cols-2 gap-3 mb-4 text-[11px] xs:text-xs text-center">
+                <div class="bg-brand-peach/40 p-3.5 rounded-2xl border border-brand-light font-bold">Googleアカウントで登録</div>
+                <div class="bg-brand-peach/40 p-3.5 rounded-2xl border border-brand-light font-bold">メールアドレスで登録</div>
+            </div>
+            <p class="text-[11px] xs:text-xs text-gray-500 leading-relaxed mb-4">どちらも数分で終わります。</p>
+            <div class="flex items-center justify-center gap-1.5 mb-4 text-[10px] font-bold text-brand-dark text-center">
+                <span class="bg-white border border-brand-light rounded-xl px-3 py-2">🌐<br>公式サイトへ</span><span class="arw">▶</span>
+                <span class="bg-white border border-brand-light rounded-xl px-3 py-2">✍️<br>アカウント登録</span><span class="arw">▶</span>
+                <span class="bg-brand-coral text-white rounded-xl px-3 py-2">➕<br>Add product</span>
+            </div>
+            <a href="https://printify.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-brand-coral hover:bg-brand-deep transition-colors rounded-full px-5 py-2.5 mb-4">
+                Printify公式サイトを見る <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+            <div class="bg-brand-peach/40 p-3.5 rounded-xl border border-brand-light text-[11px] xs:text-xs leading-relaxed">
+                🌷 <strong>登録したあと迷ったら</strong>：管理画面の「商品を追加（Add product）」から、作りたいカテゴリ（パズルなど）を選ぶところから始めれば大丈夫です。
+            </div>
+        </section>
+
+        <!-- ============ STEP 4 ============ -->
+        <section id="step4" class="py-8 px-6 bg-brand-peach/10 scroll-mt-4">
+            <div class="flex items-center gap-2.5 mb-4">
+                <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">STEP 4</span>
+                <h2 class="text-base font-extrabold text-brand-dark">🧩 パズルを選んで、絵をのせる</h2>
+            </div>
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                管理画面でパズルを選ぶと、ピース数の違う商品が並びます。<span class="text-[11px] text-gray-500">（取り扱いは時期により変わります。以下は一例）</span>
+            </p>
+            <div class="grid grid-cols-4 gap-2 mb-2 text-center">
+                <div class="bg-white p-2.5 rounded-xl border border-brand-light">
+                    <div class="grid grid-cols-3 gap-0.5 w-9 mx-auto mb-1.5"><i class="h-2.5 bg-brand-coral/70 rounded-[2px]"></i><i class="h-2.5 bg-brand-coral/70 rounded-[2px]"></i><i class="h-2.5 bg-brand-coral/70 rounded-[2px]"></i><i class="h-2.5 bg-brand-coral/70 rounded-[2px]"></i><i class="h-2.5 bg-brand-coral/70 rounded-[2px]"></i><i class="h-2.5 bg-brand-coral/70 rounded-[2px]"></i><i class="h-2.5 bg-brand-coral/70 rounded-[2px]"></i><i class="h-2.5 bg-brand-coral/70 rounded-[2px]"></i><i class="h-2.5 bg-brand-coral/70 rounded-[2px]"></i></div>
+                    <p class="text-sm font-black text-brand-deep">110</p><p class="text-[9px] text-gray-500">ピース</p><p class="text-[9px] font-bold text-brand-dark mt-1 leading-tight">お子さま・<br>はじめて</p>
+                </div>
+                <div class="bg-white p-2.5 rounded-xl border border-brand-light">
+                    <div class="grid grid-cols-4 gap-0.5 w-9 mx-auto mb-1.5"><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i><i class="h-1.5 bg-brand-coral/70 rounded-[1px]"></i></div>
+                    <p class="text-sm font-black text-brand-deep">252</p><p class="text-[9px] text-gray-500">ピース</p><p class="text-[9px] font-bold text-brand-dark mt-1 leading-tight">気軽に<br>楽しみたい</p>
+                </div>
+                <div class="bg-white p-2.5 rounded-xl border-2 border-brand-coral relative">
+                    <span class="absolute -top-2 left-1/2 -translate-x-1/2 bg-brand-coral text-white text-[8px] font-black px-1.5 rounded-full whitespace-nowrap">定番</span>
+                    <div class="grid grid-cols-5 gap-0.5 w-9 mx-auto mb-1.5"><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i><i class="h-1 bg-brand-coral/70"></i></div>
+                    <p class="text-sm font-black text-brand-deep">500</p><p class="text-[9px] text-gray-500">ピース</p><p class="text-[9px] font-bold text-brand-dark mt-1 leading-tight">迷ったら<br>ここ</p>
+                </div>
+                <div class="bg-white p-2.5 rounded-xl border border-brand-light">
+                    <div class="grid grid-cols-6 gap-px w-9 mx-auto mb-1.5"><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i><i class="h-0.5 bg-brand-coral/70"></i></div>
+                    <p class="text-sm font-black text-brand-deep">1000</p><p class="text-[9px] text-gray-500">ピース</p><p class="text-[9px] font-bold text-brand-dark mt-1 leading-tight">じっくり<br>大人向け</p>
+                </div>
+            </div>
+            <p class="text-[9px] text-gray-400 text-center mb-4">↑ ピースが細かいほど、組み立てに時間がかかります</p>
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                小さなお子さん向けなら少なめ、じっくり楽しむ大人向けなら多め、と<strong>STEP1で決めた相手に合わせて</strong>選びましょう。迷ったら中間サイズからでOKです。
+            </p>
+            <p class="text-xs xs:text-sm leading-relaxed mb-3">
+                選んだら、保存した絵をアップロード。すると<strong>パズルの完成イメージ</strong>が画面に出るので、公開前に3点だけ見ておきます。
+            </p>
+            <div class="bg-white p-3.5 rounded-xl border border-brand-light text-[11px] xs:text-xs leading-relaxed">
+                👀 <strong>公開前の3点チェック</strong><br>
+                ① 大事な部分が、端で切れていないか<br>
+                ② 文字を入れた場合、見切れていないか<br>
+                ③ 画面で見た色と、大きくズレていないか
+            </div>
+        </section>
+
+        <!-- ============ STEP 5 ============ -->
+        <section id="step5" class="py-8 px-6 scroll-mt-4">
+            <div class="flex items-center gap-2.5 mb-4">
+                <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">STEP 5</span>
+                <h2 class="text-base font-extrabold text-brand-dark">🏷️ 値段をつけて、公開する</h2>
+            </div>
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                最後は販売価格。Printifyの<strong>基本料金（製造原価）より高く</strong>、かつ<strong>似た商品と比べて無理のない金額</strong>にします。下の計算機で、利益のイメージをつかんでみてください。
+            </p>
+
+            <div class="bg-white p-4 rounded-2xl border-2 border-brand-coral/50 mb-4">
+                <p class="text-xs font-black text-brand-deep mb-3">💰 かんたん利益計算機</p>
+                <div class="grid grid-cols-2 gap-2.5 text-[11px]">
+                    <label class="block"><span class="font-bold text-gray-600">製造原価（円）</span><input id="c_cost" type="number" value="2500" min="0" class="mt-1 w-full border border-brand-light rounded-lg px-2.5 py-2 text-xs"></label>
+                    <label class="block"><span class="font-bold text-gray-600">販売価格（円）</span><input id="c_price" type="number" value="3980" min="0" class="mt-1 w-full border border-brand-light rounded-lg px-2.5 py-2 text-xs"></label>
+                    <label class="block"><span class="font-bold text-gray-600">販売サイト手数料（％）</span><input id="c_fee" type="number" value="10" min="0" max="100" class="mt-1 w-full border border-brand-light rounded-lg px-2.5 py-2 text-xs"></label>
+                    <label class="block"><span class="font-bold text-gray-600">月の販売数（個）</span><input id="c_n" type="number" value="10" min="0" class="mt-1 w-full border border-brand-light rounded-lg px-2.5 py-2 text-xs"></label>
+                </div>
+                <div class="grid grid-cols-3 gap-2 mt-3 text-center">
+                    <div class="bg-brand-peach p-2.5 rounded-xl"><p id="r_unit" class="text-sm font-black text-brand-deep">—</p><p class="text-[9px] text-gray-500">1個の利益</p></div>
+                    <div class="bg-brand-peach p-2.5 rounded-xl"><p id="r_rate" class="text-sm font-black text-brand-deep">—</p><p class="text-[9px] text-gray-500">利益率</p></div>
+                    <div class="bg-brand-peach p-2.5 rounded-xl"><p id="r_month" class="text-sm font-black text-brand-deep">—</p><p class="text-[9px] text-gray-500">月の利益(見込)</p></div>
+                </div>
+                <p class="text-[10px] font-bold text-gray-600 mt-4 mb-1.5">販売価格の内訳</p>
+                <div class="h-5 rounded-full overflow-hidden flex bg-gray-100 text-[9px] font-black text-white text-center leading-5">
+                    <div id="bar_cost" class="bg-gray-400 transition-all" style="width:63%"></div>
+                    <div id="bar_fee" class="bg-brand-accent transition-all" style="width:10%"></div>
+                    <div id="bar_profit" class="bg-brand-coral transition-all" style="width:27%"></div>
+                </div>
+                <div class="grid grid-cols-3 gap-1 mt-2 text-[9px] text-gray-600 text-center">
+                    <div><i class="inline-block w-2 h-2 rounded-full bg-gray-400 mr-1"></i>製造原価<br><b id="l_cost" class="text-[10px]">—</b></div>
+                    <div><i class="inline-block w-2 h-2 rounded-full bg-brand-accent mr-1"></i>手数料<br><b id="l_fee" class="text-[10px]">—</b></div>
+                    <div><i class="inline-block w-2 h-2 rounded-full bg-brand-coral mr-1"></i>あなたの利益<br><b id="l_profit" class="text-[10px] text-brand-deep">—</b></div>
+                </div>
+                <p class="text-[9px] text-gray-400 mt-3 leading-relaxed">※金額はすべて例です。実際の原価・送料・手数料は、Printifyや販売先の最新表示で必ず確認してください。</p>
+            </div>
+
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                タイトルと説明文も、AIにお任せできます。
+            </p>
+            <div class="bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden mb-4">
+                <div class="bg-[#3A302F] px-4 py-3 flex justify-between items-center border-b border-white/10">
+                    <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-coral"></span><span class="text-[11px] text-gray-300 font-bold">⑤ 商品ページの文章プロンプト</span></div>
+                    <button onclick="copyToClipboard('p5', this)" class="text-[10px] text-white bg-brand-coral hover:bg-brand-deep transition-colors px-2.5 py-1 rounded-md font-bold flex items-center gap-1 shrink-0"><i class="fa-regular fa-copy"></i><span>コピー</span></button>
+                </div>
+                <div class="p-3 overflow-x-auto">
+<pre id="p5" class="text-[10px] leading-relaxed font-mono whitespace-pre-wrap select-all">ジグソーパズルの商品ページ用に、タイトルと説明文を作ってください。
+
+【絵柄】［　例：森の奥の秘密の本屋さん、水彩画　］
+【ピース数】［　例：500ピース　］
+【買ってほしい人】［　例：30〜50代の本好きの大人。贈り物にも　］
+
+【出力してほしいもの】
+1. 検索されやすいタイトル案を3つ（40文字以内）
+2. 説明文（300文字前後）
+　・冒頭で絵の世界観が伝わるように
+　・完成後に飾る楽しみにも触れる
+　・実際にはない効果や、大げさな表現は書かない
+3. 商品ページに入れたいキーワードを10個</pre>
+                </div>
+            </div>
+
+            <div class="bg-brand-peach/40 p-3.5 rounded-xl border border-brand-light text-[11px] xs:text-xs leading-relaxed mb-2">
+                🌷 <strong>価格に迷ったら</strong>：同じピース数・似た雰囲気の商品を、Printify内や他の販売サイトで数点見て、相場を確認してから決めましょう。無理に高くしなくて大丈夫です。
+            </div>
+            <div class="bg-[#FEF9E7] border-l-4 border-yellow-400 p-3.5 rounded-r-xl text-[10px] xs:text-xs leading-relaxed">
+                ⚠️ <strong>販売前チェック</strong>：①絵がキャラクターやブランドに似ていないか　②タイトル・説明文に誇大な表現がないか　③価格が原価＋手数料を下回っていないか　④配送先の国は、最初は自国＋主要国に絞ったか。この4つは自分の目で確認してから公開してくださいね。
+            </div>
+        </section>
+
+        <!-- ============ 注文が入ったら ============ -->
+        <section class="py-8 px-6 bg-brand-peach/20">
+            <h2 class="text-base font-extrabold text-brand-dark text-center mb-4">📦 注文が入ったら、どうなるの？</h2>
+            <div class="bg-white rounded-2xl border border-brand-light p-4 mb-4">
+                <div class="flex items-center justify-between gap-0.5 text-center">
+                    <div class="flex-1 bg-brand-peach rounded-xl py-2 border border-brand-coral/40"><p class="text-lg">🛒</p><p class="text-[9px] font-bold mt-0.5 leading-tight">お客様が<br>注文</p></div>
+                    <span class="arw text-xs">▶</span>
+                    <div class="flex-1 bg-brand-light/70 rounded-xl py-2"><p class="text-lg">🖨️</p><p class="text-[9px] font-bold mt-0.5 leading-tight">印刷</p></div>
+                    <span class="arw text-xs">▶</span>
+                    <div class="flex-1 bg-brand-light/70 rounded-xl py-2"><p class="text-lg">📦</p><p class="text-[9px] font-bold mt-0.5 leading-tight">梱包</p></div>
+                    <span class="arw text-xs">▶</span>
+                    <div class="flex-1 bg-brand-light/70 rounded-xl py-2"><p class="text-lg">🚚</p><p class="text-[9px] font-bold mt-0.5 leading-tight">発送</p></div>
+                    <span class="arw text-xs">▶</span>
+                    <div class="flex-1 bg-brand-peach rounded-xl py-2 border border-brand-coral/40"><p class="text-lg">🏠</p><p class="text-[9px] font-bold mt-0.5 leading-tight">お客様に<br>到着</p></div>
+                </div>
+                <div class="flex mt-2 text-[9px] font-bold text-center">
+                    <div class="w-[20%] pr-0.5"><div class="bg-gray-200 text-gray-500 rounded-full py-0.5">注文</div></div>
+                    <div class="w-[60%] px-0.5"><div class="bg-brand-coral text-white rounded-full py-0.5">Printifyが全部やる</div></div>
+                    <div class="w-[20%] pl-0.5"><div class="bg-gray-200 text-gray-500 rounded-full py-0.5">受取</div></div>
+                </div>
+                <p class="text-center text-[10px] text-gray-500 mt-2">あなたの作業は <span class="font-black text-brand-deep">0</span> 😊</p>
+            </div>
+            <p class="text-[11px] xs:text-xs text-gray-600 leading-relaxed text-center">
+                ここまで<strong>Printify側がやってくれます</strong>。自宅に在庫を置く必要も、発送作業もありません。<br>あなたがやるのは、絵づくりと商品ページ、そして「見つけてもらう工夫」だけです。
+            </p>
+        </section>
+
+        <!-- ============ 3つの工夫 ============ -->
+        <section class="py-8 px-6">
+            <div class="flex items-center gap-2.5 mb-4">
+                <span class="bg-brand-accent text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">重要</span>
+                <h2 class="text-base font-extrabold text-brand-dark">売上を伸ばす、3つの工夫</h2>
+            </div>
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                出品するだけでも販売は始められます。でも、<strong>ここから先の工夫で差がつきます</strong>。
+            </p>
+
+            <div class="bg-white p-4 rounded-2xl border border-brand-light mb-3">
+                <p class="text-xs font-black text-brand-deep mb-1">① 海外のお客さんにも届ける</p>
+                <p class="text-[11px] xs:text-xs text-gray-600 leading-relaxed mb-3">日本以外にも売り先を広げると、目に留まる機会が増えます。人気の絵柄や色は、AIに聞きながら決められます。</p>
+                <div class="bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden">
+                    <div class="bg-[#3A302F] px-4 py-2.5 flex justify-between items-center border-b border-white/10">
+                        <span class="text-[11px] text-gray-300 font-bold">⑥ 海外トレンド調査プロンプト</span>
+                        <button onclick="copyToClipboard('p6', this)" class="text-[10px] text-white bg-brand-coral hover:bg-brand-deep transition-colors px-2.5 py-1 rounded-md font-bold flex items-center gap-1 shrink-0"><i class="fa-regular fa-copy"></i><span>コピー</span></button>
+                    </div>
+                    <div class="p-3 overflow-x-auto">
+<pre id="p6" class="text-[10px] leading-relaxed font-mono whitespace-pre-wrap select-all">アメリカやイギリスなど英語圏で、ジグソーパズルの絵柄として人気のあるテーマと色づかいを教えてください。
+さらに、今後3か月で需要が高まりそうな季節・イベントも挙げ、それぞれに合うイラストの説明文を、英語と日本語で1つずつ作ってください。</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-2xl border border-brand-light mb-3">
+                <p class="text-xs font-black text-brand-deep mb-1">② 「作り方」そのものを商品にする</p>
+                <p class="text-[11px] xs:text-xs text-gray-600 leading-relaxed">絵を作るのに使った<strong>プロンプトも、立派な商品</strong>になります。表情・色・背景の変え方や、グッズ向けの絵の作り方までセットにすれば、初心者にうれしい内容に。</p>
+                <div class="flex items-center justify-center gap-1 mt-3 text-[9px] font-bold text-center">
+                    <span class="bg-brand-peach rounded-lg px-2 py-1.5">🖼️<br>画像</span><span class="arw">＋</span>
+                    <span class="bg-brand-peach rounded-lg px-2 py-1.5">📝<br>プロンプト</span><span class="arw">＋</span>
+                    <span class="bg-brand-peach rounded-lg px-2 py-1.5">🎓<br>作り方のコツ</span><span class="arw">＝</span>
+                    <span class="bg-brand-coral text-white rounded-lg px-2 py-1.5">📦<br>セット商品</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-2xl border border-brand-light">
+                <p class="text-xs font-black text-brand-deep mb-1">③ SNSで作品を見てもらう</p>
+                <p class="text-[11px] xs:text-xs text-gray-600 leading-relaxed mb-3">X・Instagram・TikTok・Pinterestなどで、できあがったパズルを紹介します。<strong>「SNS → 商品ページ → 購入」</strong>の流れができると、広告費をかけなくても見つけてもらえる可能性があります。</p>
+                <div class="bg-brand-peach rounded-xl p-3 mb-3">
+                    <div class="flex flex-col items-center gap-1 text-center text-[10px] font-bold">
+                        <div class="w-full bg-white border border-brand-light rounded-lg py-1.5">📱 SNSで作品を紹介<span class="block text-[9px] font-normal text-gray-500">X・Instagram・TikTok・Pinterest</span></div>
+                        <span class="arw text-xs">▼</span>
+                        <div class="w-[80%] bg-white border border-brand-light rounded-lg py-1.5">🛍️ 商品ページを見る</div>
+                        <span class="arw text-xs">▼</span>
+                        <div class="w-[60%] bg-brand-coral text-white rounded-lg py-1.5">🧩 購入！</div>
+                    </div>
+                </div>
+                <div class="bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden">
+                    <div class="bg-[#3A302F] px-4 py-2.5 flex justify-between items-center border-b border-white/10">
+                        <span class="text-[11px] text-gray-300 font-bold">⑦ SNS投稿文プロンプト</span>
+                        <button onclick="copyToClipboard('p7', this)" class="text-[10px] text-white bg-brand-coral hover:bg-brand-deep transition-colors px-2.5 py-1 rounded-md font-bold flex items-center gap-1 shrink-0"><i class="fa-regular fa-copy"></i><span>コピー</span></button>
+                    </div>
+                    <div class="p-3 overflow-x-auto">
+<pre id="p7" class="text-[10px] leading-relaxed font-mono whitespace-pre-wrap select-all">次のパズルを、Instagramで紹介する投稿文を3パターン作ってください。
+
+【商品】［　例：森の秘密の本屋さんの500ピースパズル　］
+【伝えたい魅力】［　例：あたたかい色づかい、完成後に飾れる　］
+
+・1つ目は物語調、2つ目は制作の裏話調、3つ目は問いかけ調
+・各150文字前後
+・ハッシュタグを8個付ける</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ うまくいかないとき ============ -->
+        <section class="py-6 px-6 bg-brand-peach/20">
+            <h2 class="text-base font-extrabold text-brand-dark text-center mb-4">🔧 うまくいかないときのQ&amp;A</h2>
+            <div class="space-y-2.5 text-[11px] xs:text-xs">
+                <details class="bg-white rounded-xl border border-brand-light px-4 py-3">
+                    <summary class="font-bold flex items-center gap-2"><i class="fa-solid fa-chevron-right chev text-brand-coral text-[10px]"></i>印刷したら、画像が粗い・ぼやける</summary>
+                    <p class="text-gray-600 leading-relaxed mt-2">生成時に「高解像度」と入れ、保存も最大サイズで。それでも粗いときは、同じ構図で作り直してみてください。</p>
+                </details>
+                <details class="bg-white rounded-xl border border-brand-light px-4 py-3">
+                    <summary class="font-bold flex items-center gap-2"><i class="fa-solid fa-chevron-right chev text-brand-coral text-[10px]"></i>既存のキャラクターに似てしまう</summary>
+                    <p class="text-gray-600 leading-relaxed mt-2">作品名やキャラ名を出す指示は避け、一般的な言葉だけで描写を。販売前に、似ていないかも自分の目で確認しましょう。</p>
+                </details>
+                <details class="bg-white rounded-xl border border-brand-light px-4 py-3">
+                    <summary class="font-bold flex items-center gap-2"><i class="fa-solid fa-chevron-right chev text-brand-coral text-[10px]"></i>Printifyの対応国・配送設定が分からない</summary>
+                    <p class="text-gray-600 leading-relaxed mt-2">最初は自国と主要な数か国に絞って公開し、慣れてから広げましょう。</p>
+                </details>
+                <details class="bg-white rounded-xl border border-brand-light px-4 py-3">
+                    <summary class="font-bold flex items-center gap-2"><i class="fa-solid fa-chevron-right chev text-brand-coral text-[10px]"></i>出品したのに、全然見てもらえない</summary>
+                    <p class="text-gray-600 leading-relaxed mt-2">SNSでの紹介を後回しにしていませんか？ 作って終わりにせず、海外展開（工夫①）やSNS発信（工夫③）とセットで動かしてみてください。</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- ============ まとめ ============ -->
+        <section class="py-8 px-6">
+            <div class="bg-[#FEF9E7] border border-yellow-200 p-5 rounded-2xl">
+                <p class="font-bold text-sm mb-2">🌻 まとめ：今日やること</p>
+                <ul class="space-y-1.5 text-[11px] xs:text-xs leading-relaxed text-brand-dark">
+                    <li>✔ 絵が描けなくても、AIでオリジナルのイラストは作れる</li>
+                    <li>✔ 絵はPrintifyでパズルなどの商品にできる</li>
+                    <li>✔ 印刷・梱包・発送はサービス側だから、在庫は要らない</li>
+                    <li>✔ 先に「誰が買うか」を決めると、売れやすい絵になる</li>
+                    <li>✔ プロンプトや作り方も、セットにすれば商品になる</li>
+                </ul>
+                <p class="text-[11px] xs:text-xs leading-relaxed mt-3">
+                    まずは「どんなパズルなら、手に取ってもらえるかな？」を想像して、<strong>AIに1枚だけ絵を頼んでみましょう</strong>。その小さな一歩が、新しい収入の入り口になるかもしれません🌷
+                </p>
+            </div>
+        </section>
+
+        <!-- ============ 正直に言います ============ -->
+        <section class="py-8 px-6">
+            <div class="bg-white p-5 xs:p-6 rounded-3xl border border-brand-coral/30 shadow-sm">
+                <p class="text-xs xs:text-sm leading-relaxed font-bold text-center mb-4">
+                    ⚠️ ここで、<span class="text-brand-deep border-b-2 border-brand-coral">正直にお伝えしたいこと</span>があります。
+                </p>
+                <p class="text-[11px] xs:text-xs text-gray-500 leading-relaxed text-center mb-4">
+                    ここまで読んで「手順が分かったから、自分でもできそう」と感じたかもしれません。<br>
+                    でも実は、<strong>「やり方を知っていること」と「続けて収入になること」は別物</strong>なんです。
+                </p>
+                <div class="space-y-2.5 bg-brand-peach/40 p-4 rounded-xl border border-brand-light/60">
+                    <div class="flex items-start gap-2 text-[11px] xs:text-xs">
+                        <span class="text-brand-coral">🤔</span><p>どんな絵柄・テーマが「今」買われるの？</p>
+                    </div>
+                    <div class="flex items-start gap-2 text-[11px] xs:text-xs">
+                        <span class="text-brand-coral">🤔</span><p>AIに指示しても、思ったような絵が出てこない…</p>
+                    </div>
+                    <div class="flex items-start gap-2 text-[11px] xs:text-xs">
+                        <span class="text-brand-coral">🤔</span><p>出品はしたけど、どうやって見つけてもらえばいいの？</p>
+                    </div>
+                </div>
+                <p class="text-[11px] text-gray-500 mt-4 text-center leading-relaxed">
+                    このあたりでつまずいて、そっと諦めてしまう方がいちばん多いんです。🥺
+                </p>
+            </div>
+        </section>
+
+        <!-- ============ 私の失敗（ストーリー） ============ -->
+        <section class="py-12 px-6 bg-gradient-to-b from-brand-peach to-white border-t border-brand-light">
+            <h2 class="serif-title text-base xs:text-lg font-bold text-center text-brand-dark mb-8 relative inline-block w-full">
+                最後に、私自身の話を少しだけ
+                <span class="block w-12 h-1 bg-brand-coral mx-auto mt-2 rounded-full"></span>
+            </h2>
+
+            <div class="bg-brand-dark text-[#F7F5F5] rounded-3xl p-5 mb-8 shadow-inner relative overflow-hidden">
+                <div class="absolute -right-8 -top-8 w-24 h-24 bg-white/5 rounded-full"></div>
+                <h3 class="text-xs xs:text-sm font-black text-brand-coral tracking-wider text-center mb-3">
+                    💔 私も、遠回りだらけでした
+                </h3>
+                <p class="text-[11px] xs:text-xs leading-relaxed mb-3 text-center">
+                    自己流で副業に手を出し、気づけば<br>
+                    <span class="text-brand-coral font-bold text-xs xs:text-sm underline decoration-brand-coral decoration-2">150万円を失う</span>ところまでいきました。
+                </p>
+                <p class="text-[11px] xs:text-xs leading-relaxed text-gray-300 text-center">
+                    「私にはセンスがないんだ」と布団のなかで一人泣いた夜は、数え切れません。<br>
+                    子どものささやかなおねだりに、笑って応えられない自分が情けなかった。
+                </p>
+            </div>
+
+            <div class="text-center mb-8">
+                <p class="text-brand-deep text-lg animate-bounce"><i class="fa-solid fa-circle-chevron-down"></i></p>
+            </div>
+
+            <div class="bg-brand-peach p-5 rounded-3xl border border-brand-coral/40 mb-8">
+                <h3 class="text-xs xs:text-sm font-black text-brand-deep text-center mb-3">
+                    ✨ そこから抜け出せたのは「型」を知ってから
+                </h3>
+                <p class="text-[11px] xs:text-xs leading-relaxed text-brand-dark mb-4 text-center">
+                    試行錯誤の末にたどり着いたのは、<br>
+                    <strong>「AIを賢く使って、手堅くお家で収入をつくる実践ノウハウと神テンプレート」</strong>でした。
+                </p>
+                <div class="bg-white p-3 xs:p-4 rounded-xl border border-brand-light text-center space-y-2">
+                    <p class="text-xs font-bold text-brand-dark">今のあなたと私の違いは、才能ではありません。</p>
+                    <p class="text-[10px] xs:text-xs sm:text-sm font-black text-brand-deep tracking-tighter">
+                        「成果が出る『型』を知って、<br>失敗を避ける道を選んだかどうか」
+                    </p>
+                    <p class="text-[10px] text-gray-400">本当に、それだけなんです。</p>
+                </div>
+            </div>
+
+            <p class="text-xs xs:text-sm leading-relaxed text-center font-bold">
+                時間を切り売りする内職ではなく、<br>
+                <span class="text-brand-deep bg-yellow-100 px-1 py-0.5 rounded">「AIとSNS」を賢く味方につけて</span><br>
+                長く家庭を支える収入源を育てる。<br>
+                それが、家族と自分を守るいちばん現実的な選択だと思っています。
+            </p>
+        </section>
+
+        <!-- 新手法ティザー・オプチャ誘導 セクション -->
+        <section class="py-16 px-6 bg-gradient-to-b from-[#fffcf7] to-[#ffe5d9]">
+            <div class="text-center mb-8">
+                <span class="inline-block bg-white text-primary border border-primary/30 font-bold px-6 py-3 rounded-3xl text-sm mb-4 shadow-sm animate-bounce-slow leading-snug">
+                    パズル販売の、その先へ。<br>もっと安定して稼ぎたいあなたへ
+                </span>
+            </div>
+
+            <p class="text-center text-gray-800 text-base sm:text-lg leading-relaxed mb-8 max-w-lg mx-auto font-bold bg-yellow-100/50 p-4 rounded-2xl border border-yellow-200">
+                パズル販売みたいに「1つずつ作って売る」やり方も素敵だけど、<br>正直、単発の収入だけだと不安が消えないですよね。<br><span class="text-primary text-xl block mt-2">もっと再現性が高くて、<br>スマホとAIだけで完結する<br>新しい在宅の稼ぎ方</span><br>を、実は最近見つけました。
+            </p>
+
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100 max-w-lg mx-auto relative mb-12">
+                <div class="absolute -top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                    近日公開🎁
+                </div>
+
+                <p class="text-sm text-gray-500 text-center mb-1">それが…</p>
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">
+                    AI × ?? 新手法
+                </h3>
+
+                <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100">
+                    <p class="font-bold text-center text-gray-800 mb-4 text-sm border-b border-gray-200 pb-2">
+                        副業選びで見るべき、5つの条件
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex items-start"><span class="mr-2 text-lg shrink-0">⏱️</span><span class="pt-0.5">時間がかからない</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-lg shrink-0">🔁</span><span class="pt-0.5">主婦でも稼げる再現性がある</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-lg shrink-0">📈</span><span class="pt-0.5">市場が大きい</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-lg shrink-0">🙈</span><span class="pt-0.5">家族にバレない</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-lg shrink-0">📱</span><span class="pt-0.5">スマホ1台で完結する</span></li>
+                    </ul>
+                </div>
+
+                <p class="text-sm text-gray-700 mt-6 leading-relaxed bg-white/80">
+                    この5つ、どれか1つでも欠けると続かなかったり、成果が出にくくなります。<br><br>
+                    そんな中、<strong class="text-rose-600">この条件をかなり満たす新しい手法</strong>を最近見つけました。<br><br>
+                    <strong class="text-rose-600">専用のオープンチャットだけで、先行公開</strong>していきます。
+                </p>
+
+                <a href="https://line.me/ti/g2/-iZ9LBnhq6PqtsV0tf52ID7_K5QNRmfn5Hqesg?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" rel="noopener noreferrer" target="_blank" class="mt-6 flex justify-center transition-transform hover:scale-[1.02] active:scale-[0.98]">
+                    <img alt="AI×??新手法 近日公開 オプチャに参加する" src="assets/teaser_openchat.png" class="rounded-2xl shadow-md max-w-full h-auto object-contain">
+                </a>
+            </div>
+
+            <div class="max-w-lg mx-auto text-center">
+                <p class="text-[10px] sm:text-xs text-gray-500 text-left bg-white/50 p-3 rounded-lg">
+                    ※オープンチャットの参加人数には上限があります。予告なく受付を終了する場合がありますので、お早めにご参加ください。
+                </p>
+            </div>
+        </section>
+
+        <footer class="bg-brand-dark text-white/70 text-center py-8 px-4 text-[10px] border-t border-white/5 mt-auto">
+            <a href="https://www.instagram.com/mina_ai_fukugyo/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white hover:text-brand-coral transition-colors mb-3 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
+                <i class="fa-brands fa-instagram text-xs"></i>
+                <span class="text-[10px]">Instagram: @mina_ai_fukugyo</span>
+            </a>
+            <p class="mb-4 text-white/50">みな ｜ AI×SNSで在宅収入を叶える主婦</p>
+
+            <p class="text-white/40 leading-relaxed max-w-md mx-auto mb-5">
+                本ページの内容は手順の解説であり、収益を保証するものではありません。成果は個人の状況により異なります。<br><br>
+                外部サービス（Printify、ChatGPT、各販売サイト、公式LINEなど）の条件・規約・料金・手数料は変更される場合があるため、利用前に各サービスの公式情報をご確認ください。
+            </p>
+
+            <nav class="flex items-center justify-center gap-3 text-white/60 mb-5">
+                <a href="#top" class="hover:text-brand-coral transition-colors">トップページ</a>
+                <span class="text-white/20">｜</span>
+                <a href="about.html" class="hover:text-brand-coral transition-colors">運営者情報</a>
+                <span class="text-white/20">｜</span>
+                <a href="privacy.html" class="hover:text-brand-coral transition-colors">プライバシーポリシー</a>
+            </nav>
+
+            <p class="text-white/40">&copy; 2026 みな（@mina_ai_fukugyo）. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function copyToClipboard(elementId, button) {
+            const textToCopy = document.getElementById(elementId).innerText;
+            const done = () => {
+                const toast = document.getElementById('toast');
+                toast.classList.remove('opacity-0', 'pointer-events-none');
+                toast.classList.add('opacity-100');
+                toast.style.transform = 'translate(-50%, 0px)';
+                const originalText = button.innerHTML;
+                button.innerHTML = `<i class="fa-solid fa-check"></i> <span>コピー完了</span>`;
+                button.classList.remove('bg-brand-coral');
+                button.classList.add('bg-green-600');
+                setTimeout(() => {
+                    toast.classList.add('opacity-0', 'pointer-events-none');
+                    toast.classList.remove('opacity-100');
+                    toast.style.transform = 'translate(-50%, -10px)';
+                    button.innerHTML = originalText;
+                    button.classList.remove('bg-green-600');
+                    button.classList.add('bg-brand-coral');
+                }, 2000);
+            };
+            const fallback = () => {
+                const ta = document.createElement('textarea');
+                ta.value = textToCopy; ta.style.position = 'fixed';
+                document.body.appendChild(ta); ta.select();
+                try { document.execCommand('copy'); done(); } catch (e) {}
+                document.body.removeChild(ta);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(textToCopy).then(done, fallback);
+            } else { fallback(); }
+        }
+
+        (function () {
+            const $ = (id) => document.getElementById(id);
+            const yen = (n) => (n < 0 ? '−' : '') + '¥' + Math.abs(Math.round(n)).toLocaleString('ja-JP');
+            function calc() {
+                const cost = +$('c_cost').value || 0, price = +$('c_price').value || 0,
+                      fee = +$('c_fee').value || 0, n = +$('c_n').value || 0;
+                const unit = price - cost - price * fee / 100;
+                $('r_unit').textContent = yen(unit);
+                $('r_rate').textContent = price > 0 ? (unit / price * 100).toFixed(1) + '%' : '—';
+                $('r_month').textContent = yen(unit * n);
+                // 内訳バー（販売価格を100%とした割合）
+                const feeYen = price * fee / 100;
+                const pc = (v) => price > 0 ? Math.max(0, v / price * 100) : 0;
+                const profit = Math.max(0, unit);
+                const costPc = price > 0 ? Math.min(100, pc(cost)) : 0;
+                const feePc = Math.min(100 - costPc, pc(feeYen));
+                const profPc = Math.max(0, 100 - costPc - feePc);
+                $('bar_cost').style.width = costPc + '%';
+                $('bar_fee').style.width = feePc + '%';
+                $('bar_profit').style.width = profPc + '%';
+                $('l_cost').textContent = yen(cost);
+                $('l_fee').textContent = yen(feeYen);
+                $('l_profit').textContent = yen(profit);
+            }
+            ['c_cost', 'c_price', 'c_fee', 'c_n'].forEach((i) => $(i).addEventListener('input', calc));
+            calc();
+
+            // プロンプトのタブ切り替え
+            const tabs = document.querySelectorAll('.ptab');
+            tabs.forEach((t) => t.addEventListener('click', () => {
+                tabs.forEach((x) => x.classList.toggle('is-on', x === t));
+                document.querySelectorAll('[data-panel]').forEach((p) => {
+                    p.classList.toggle('hidden', p.dataset.panel !== t.dataset.tab);
+                });
+            }));
+        })();
+    </script>
+</body>
+</html>
